@@ -5,4 +5,4 @@ edition = "2021"
 
 [[bin]]
 name = "main"
-path = "day_07/main2.rs"
+path = "day_08/main2.rs"
