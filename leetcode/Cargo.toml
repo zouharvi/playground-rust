@@ -1,0 +1,165 @@
+[package]
+name = "leetcode"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "0002"
+path = "0002_add_numbers.rs"
+
+[[bin]]
+name = "0003"
+path = "0003_longest_nonrepeating_substring.rs"
+
+[[bin]]
+name = "0005"
+path = "0005_longest_palindrome.rs"
+
+[[bin]]
+name = "0007"
+path = "0007_reverse_integer.rs"
+
+[[bin]]
+name = "0011"
+path = "0011_container_water.rs"
+
+[[bin]]
+name = "0013"
+path = "0013_roman_to_integer.rs"
+
+[[bin]]
+name = "0015"
+path = "0015_3sum.rs"
+
+[[bin]]
+name = "0017"
+path = "0017_letter_combinations_phone.rs"
+
+[[bin]]
+name = "0021"
+path = "0021_merge_lists.rs"
+
+[[bin]]
+name = "0036"
+path = "0036_valid_sudoku.rs"
+
+[[bin]]
+name = "0048"
+path = "0048_rotate.rs"
+
+[[bin]]
+name = "0050"
+path = "0050_powf.rs"
+
+[[bin]]
+name = "0073"
+path = "0073_k_closest.rs"
+
+[[bin]]
+name = "0077"
+path = "0077_combination.rs"
+
+[[bin]]
+name = "0121"
+path = "0121_stocks_1.rs"
+
+[[bin]]
+name = "0198"
+path = "0198_house_robber.rs"
+
+[[bin]]
+name = "0213"
+path = "0213_house_robber_2.rs"
+
+[[bin]]
+name = "0205"
+path = "0205_isomorphic.rs"
+
+[[bin]]
+name = "0206"
+path = "0206_reverse_linked.rs"
+
+[[bin]]
+name = "0208"
+path = "0208_trie.rs"
+
+[[bin]]
+name = "0309"
+path = "0309_subsequence.rs"
+
+[[bin]]
+name = "0337"
+path = "0337_house_robber_3.rs"
+
+[[bin]]
+name = "0394"
+path = "0394_decode_string.rs"
+
+[[bin]]
+name = "0409"
+path = "0409_longest_palindrome.rs"
+
+[[bin]]
+name = "0470"
+path = "0470_rand10_by_rand7.rs"
+
+[[bin]]
+name = "0523"
+path = "0523_continuous_sum.rs"
+
+[[bin]]
+name = "0645"
+path = "0645_set_mismatch.rs"
+
+[[bin]]
+name = "0724"
+path = "0724_find_pivot.rs"
+
+[[bin]]
+name = "0835"
+path = "0835_img_overlap.rs"
+
+[[bin]]
+name = "0876"
+path = "0876_middle_list.rs"
+
+[[bin]]
+name = "1239"
+path = "1239_maximum_length.rs"
+
+[[bin]]
+name = "1255"
+path = "1255_max_score_words.rs"
+
+[[bin]]
+name = "1284"
+path = "1284_min_flips.rs"
+
+[[bin]]
+name = "1480"
+path = "1480_running_sum.rs"
+
+[[bin]]
+name = "1662"
+path = "1662_str_arr_eq.rs"
+
+[[bin]]
+name = "1985"
+path = "1985_kth_largest.rs"
+
+[[bin]]
+name = "2259"
+path = "2259_maximize_num.rs"
+
+[[bin]]
+name = "2443"
+path = "2443_number_sum_reverse.rs"
+
+[[bin]]
+name = "2447"
+path = "2447_subarray_gcd.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8"
