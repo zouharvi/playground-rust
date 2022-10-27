@@ -64,6 +64,10 @@ name = "0121"
 path = "0121_stocks_1.rs"
 
 [[bin]]
+name = "0122"
+path = "0122_stocks_2.rs"
+
+[[bin]]
 name = "0198"
 path = "0198_house_robber.rs"
 
