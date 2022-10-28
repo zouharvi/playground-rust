@@ -4,16 +4,16 @@ pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
     let mut groups = HashMap::<String, Vec<usize>>::new();
 
     for (s_i, s_orig) in strs.iter().enumerate() {
-        let mut s = s_orig.clone();
+        let s = s_orig.clone();
         let mut sig = s.chars().collect::<Vec<char>>();
         sig.sort();
         let sig = sig.iter().collect::<String>();
 
         if !groups.contains_key(&sig) {
-            let mut v = Vec::<usize>::new();
+            let v = Vec::<usize>::new();
             groups.insert(sig.clone(), v);
         }
-        let mut group_entry = groups.get_mut(&sig).unwrap();
+        let group_entry = groups.get_mut(&sig).unwrap();
         group_entry.push(s_i);
     }
 

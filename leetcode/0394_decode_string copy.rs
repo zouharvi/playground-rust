@@ -40,7 +40,7 @@ pub fn decode_string_slice(s: &[char]) -> (String, usize) {
         s_out_real.push(c);
     }
     // String::from_iter is more elegant but leetcode doesn't support it
-    (s_out_real, i)
+    return (s_out_real, i);
 }
 
 pub fn decode_string(s: String) -> String {

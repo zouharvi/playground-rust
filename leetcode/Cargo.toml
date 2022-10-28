@@ -64,6 +64,10 @@ name = "0077"
 path = "0077_combination.rs"
 
 [[bin]]
+name = "0102"
+path = "0102_level_order_traversal.rs"
+
+[[bin]]
 name = "0121"
 path = "0121_stocks_1.rs"
 
