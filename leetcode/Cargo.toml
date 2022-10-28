@@ -48,6 +48,10 @@ name = "0048"
 path = "0048_rotate.rs"
 
 [[bin]]
+name = "0049"
+path = "0049_anagram_groups.rs"
+
+[[bin]]
 name = "0050"
 path = "0050_powf.rs"
 
