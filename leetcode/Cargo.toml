@@ -96,6 +96,10 @@ name = "0208"
 path = "0208_trie.rs"
 
 [[bin]]
+name = "0278"
+path = "0278_first_bad_version.rs"
+
+[[bin]]
 name = "0309"
 path = "0309_subsequence.rs"
 
@@ -122,6 +126,10 @@ path = "0523_continuous_sum.rs"
 [[bin]]
 name = "0645"
 path = "0645_set_mismatch.rs"
+
+[[bin]]
+name = "0704"
+path = "0704_binary_search.rs"
 
 [[bin]]
 name = "0724"
