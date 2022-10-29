@@ -64,6 +64,10 @@ name = "0077"
 path = "0077_combination.rs"
 
 [[bin]]
+name = "0098"
+path = "0098_validate_binary_tree.rs"
+
+[[bin]]
 name = "0102"
 path = "0102_level_order_traversal.rs"
 
