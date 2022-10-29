@@ -168,6 +168,10 @@ name = "1985"
 path = "1985_kth_largest.rs"
 
 [[bin]]
+name = "2136"
+path = "2136_earliest_bloom.rs"
+
+[[bin]]
 name = "2259"
 path = "2259_maximize_num.rs"
 
