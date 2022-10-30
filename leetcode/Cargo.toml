@@ -100,6 +100,10 @@ name = "0208"
 path = "0208_trie.rs"
 
 [[bin]]
+name = "0235"
+path = "0235_lowest_common_ancestor.rs"
+
+[[bin]]
 name = "0278"
 path = "0278_first_bad_version.rs"
 
