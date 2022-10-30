@@ -204,6 +204,10 @@ name = "1284"
 path = "1284_min_flips.rs"
 
 [[bin]]
+name = "1293"
+path = "1293_obstacles_remove.rs"
+
+[[bin]]
 name = "1480"
 path = "1480_running_sum.rs"
 
