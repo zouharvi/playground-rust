@@ -19,48 +19,76 @@ impl TreeNode {
     }
 }
 
-// This is asymptotically slower than the optimal
-pub fn find_node(root: Rc<RefCell<TreeNode>>, node: Rc<RefCell<TreeNode>>) -> Vec<Rc<RefCell<TreeNode>>> {
-    let root_val = root.borrow().val;
-    let node_val = node.borrow().val;
-    let mut out: Vec<_> = [root.clone()].to_vec();
-    loop {
-        if node_val == root_val {
-            return out;
-        } else if node_val < root_val {
-            let mut result = find_node(
-                root.borrow().left.as_ref().map(|c| c.clone()).unwrap(),
-                node,
-            );
-            out.append(&mut result);
-            return out;
-        } else if node_val > root_val {
-            let mut result = find_node(
-                root.borrow().right.as_ref().map(|c| c.clone()).unwrap(),
-                node,
-            );
-            out.append(&mut result);
-            return out;
-        }
-    }
-}
+// // This is asymptotically slower than the optimal
+// pub fn _find_node(
+//     root: Rc<RefCell<TreeNode>>,
+//     node: Rc<RefCell<TreeNode>>,
+// ) -> Vec<Rc<RefCell<TreeNode>>> {
+//     let root_val = root.borrow().val;
+//     let node_val = node.borrow().val;
+//     let mut out: Vec<_> = [root.clone()].to_vec();
+//     loop {
+//         if node_val == root_val {
+//             return out;
+//         } else if node_val < root_val {
+//             let mut result = find_node(
+//                 root.borrow().left.as_ref().map(|c| c.clone()).unwrap(),
+//                 node,
+//             );
+//             out.append(&mut result);
+//             return out;
+//         } else if node_val > root_val {
+//             let mut result = find_node(
+//                 root.borrow().right.as_ref().map(|c| c.clone()).unwrap(),
+//                 node,
+//             );
+//             out.append(&mut result);
+//             return out;
+//         }
+//     }
+// }
+
+// pub fn _lowest_common_ancestor(
+//     root: Option<Rc<RefCell<TreeNode>>>,
+//     p: Option<Rc<RefCell<TreeNode>>>,
+//     q: Option<Rc<RefCell<TreeNode>>>,
+// ) -> Option<Rc<RefCell<TreeNode>>> {
+//     let root = root.unwrap();
+//     let parents_p = find_node(root.clone(), p.unwrap());
+//     let parents_q = find_node(root, q.unwrap());
+//     let mut last_good = parents_p[0].clone();
+//     for (p, q) in parents_p.iter().zip(parents_q.iter()) {
+//         if p.borrow().val != q.borrow().val {
+//             return Some(last_good);
+//         }
+//         last_good = p.clone();
+//     }
+//     None
+// }
 
 pub fn lowest_common_ancestor(
     root: Option<Rc<RefCell<TreeNode>>>,
     p: Option<Rc<RefCell<TreeNode>>>,
     q: Option<Rc<RefCell<TreeNode>>>,
 ) -> Option<Rc<RefCell<TreeNode>>> {
-    let root = root.unwrap();
-    let parents_p = find_node(root.clone(), p.unwrap());
-    let parents_q = find_node(root, q.unwrap());
-    let mut last_good = parents_p[0].clone();
-    for (p, q) in parents_p.iter().zip(parents_q.iter()) {
-        if p.borrow().val != q.borrow().val {
-            return Some(last_good);
+    let p = p.as_ref().unwrap().borrow().val;
+    let q = q.as_ref().unwrap().borrow().val;
+    let min = p.min(q);
+    let max = p.max(q);
+
+    let mut stack = [root].to_vec();
+    while let Some(Some(node)) = stack.pop() {
+        let cur_val = node.borrow().val;
+        if cur_val >= min && cur_val <= max {
+            return Some(node);
         }
-        last_good = p.clone();
+        if cur_val > max {
+            stack.push(node.borrow().left.clone());
+        } else {
+            stack.push(node.borrow().right.clone());
+        }
     }
-    None
+    todo!()
 }
 
 pub fn wrap(node: TreeNode) -> Option<Rc<RefCell<TreeNode>>> {
@@ -114,5 +142,11 @@ pub fn main() {
         right: None,
     };
 
-    println!("{:?}", lowest_common_ancestor(wrap(l1), wrap(a), wrap(b)).unwrap().borrow().val);
+    println!(
+        "{:?}",
+        lowest_common_ancestor(wrap(l1), wrap(a), wrap(b))
+            .unwrap()
+            .borrow()
+            .val
+    );
 }

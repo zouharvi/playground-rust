@@ -144,6 +144,10 @@ name = "0724"
 path = "0724_find_pivot.rs"
 
 [[bin]]
+name = "0766"
+path = "0766_toeplitz.rs"
+
+[[bin]]
 name = "0835"
 path = "0835_img_overlap.rs"
 
