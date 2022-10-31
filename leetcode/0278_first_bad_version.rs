@@ -1,3 +1,4 @@
+#[allow(non_snake_case)]
 pub fn isBadVersion(v: i32) -> bool {
     // [false, false, false, true, true][(v-1) as usize]
     [true, true][(v-1) as usize]

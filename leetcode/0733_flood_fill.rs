@@ -10,7 +10,7 @@ pub fn flood_fill(mut image: Vec<Vec<i32>>, sr: i32, sc: i32, color: i32) -> Vec
         if image[i as usize][j as usize] != orig_color {
             return false;
         }
-        return true;
+        true
     }
 
     let mut stack = vec![(sr, sc)];

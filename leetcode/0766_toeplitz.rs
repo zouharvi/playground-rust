@@ -13,7 +13,7 @@ pub fn is_toeplitz_matrix(matrix: Vec<Vec<i32>>) -> bool {
             i += 1;
             j += 1;
         }
-        return true;
+        true
     }
 
     // left edge
@@ -28,7 +28,7 @@ pub fn is_toeplitz_matrix(matrix: Vec<Vec<i32>>) -> bool {
             return false;
         }
     }
-    return true;
+    true
 }
 
 pub fn main() {

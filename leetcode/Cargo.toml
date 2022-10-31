@@ -160,6 +160,10 @@ name = "0733"
 path = "0733_flood_fill.rs"
 
 [[bin]]
+name = "0746"
+path = "0746_min_climbing_stairs.rs"
+
+[[bin]]
 name = "0766"
 path = "0766_toeplitz.rs"
 

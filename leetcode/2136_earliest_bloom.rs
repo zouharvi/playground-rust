@@ -6,12 +6,12 @@ pub fn earliest_full_bloom(plant_time: Vec<i32>, grow_time: Vec<i32>) -> i32 {
         .enumerate()
         .collect();
 
-    plants.sort_unstable_by_key(|(a_i, (a_p, a_g))| -a_g);
+    plants.sort_unstable_by_key(|(_a_i, (_a_p, a_g))| -a_g);
 
     let mut max_time: i32 = 0;
     // time to plant
     let mut cum_sum_p: i32 = 0;
-    for (p_i, (p_p, p_g)) in plants {
+    for (_p_i, (p_p, p_g)) in plants {
         cum_sum_p += p_p as i32;
         max_time = max_time.max(cum_sum_p + p_g as i32);
     }

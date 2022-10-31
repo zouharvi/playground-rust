@@ -15,6 +15,7 @@ pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
     }
 
     // check cols
+    #[allow(clippy::needless_range_loop)]
     for col_i in 0..N {
         let mut set = HashSet::with_capacity(N);
         for row_i in 0..N {
@@ -27,6 +28,7 @@ pub fn is_valid_sudoku(board: Vec<Vec<char>>) -> bool {
     }
 
     // check squares
+    #[allow(clippy::needless_range_loop)]
     for square_i in 0..3 {
         for square_j in 0..3 {
             let mut set = HashSet::with_capacity(N);

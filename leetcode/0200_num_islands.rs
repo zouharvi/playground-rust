@@ -20,14 +20,13 @@ pub fn num_islands(grid: Vec<Vec<char>>) -> i32 {
         if grid[i as usize][j as usize].1.is_some() {
             return false;
         }
-        return true;
+        true
     }
     let mut segments = 0;
 
     // add all
     let mut queue: Vec<(usize, usize)> = (0..grid.len())
-        .map(|i| (0..grid[0].len()).map(move |j| (i, j)))
-        .flatten()
+        .flat_map(|i| (0..grid[0].len()).map(move |j| (i, j)))
         .collect();
 
     while let Some((i, j)) = queue.pop() {

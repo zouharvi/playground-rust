@@ -47,11 +47,11 @@ pub fn is_valid_bst_local(
     }
     let l_min = l_min.unwrap_or(root.val);
     let r_max = r_max.unwrap_or(root.val);
-    return (true, Some(l_min), Some(r_max));
+    (true, Some(l_min), Some(r_max))
 }
 
 pub fn is_valid_bst(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
-    return is_valid_bst_local(&root).0;
+    is_valid_bst_local(&root).0
 }
 
 pub fn wrap(node: TreeNode) -> TreeNodeFull {
