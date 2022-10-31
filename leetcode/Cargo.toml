@@ -56,6 +56,10 @@ name = "0050"
 path = "0050_powf.rs"
 
 [[bin]]
+name = "0070"
+path = "0070_climbing_stairs.rs"
+
+[[bin]]
 name = "0073"
 path = "0073_k_closest.rs"
 
@@ -82,6 +86,10 @@ path = "0122_stocks_2.rs"
 [[bin]]
 name = "0198"
 path = "0198_house_robber.rs"
+
+[[bin]]
+name = "0200"
+path = "0200_num_islands.rs"
 
 [[bin]]
 name = "0213"
@@ -128,6 +136,10 @@ name = "0470"
 path = "0470_rand10_by_rand7.rs"
 
 [[bin]]
+name = "0509"
+path = "0509_fibonacci.rs"
+
+[[bin]]
 name = "0523"
 path = "0523_continuous_sum.rs"
 
@@ -142,6 +154,10 @@ path = "0704_binary_search.rs"
 [[bin]]
 name = "0724"
 path = "0724_find_pivot.rs"
+
+[[bin]]
+name = "0733"
+path = "0733_flood_fill.rs"
 
 [[bin]]
 name = "0766"
