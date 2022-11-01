@@ -56,6 +56,10 @@ name = "0050"
 path = "0050_powf.rs"
 
 [[bin]]
+name = "0062"
+path = "0062_unique_paths.rs"
+
+[[bin]]
 name = "0070"
 path = "0070_climbing_stairs.rs"
 
@@ -198,6 +202,10 @@ path = "1480_running_sum.rs"
 [[bin]]
 name = "1662"
 path = "1662_str_arr_eq.rs"
+
+[[bin]]
+name = "1706"
+path = "1706_ball_game.rs"
 
 [[bin]]
 name = "1985"
