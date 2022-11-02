@@ -136,6 +136,14 @@ name = "0409"
 path = "0409_longest_palindrome.rs"
 
 [[bin]]
+name = "0433"
+path = "0433_minimum_mutation.rs"
+
+[[bin]]
+name = "0438"
+path = "0438_string_anagrams.rs"
+
+[[bin]]
 name = "0470"
 path = "0470_rand10_by_rand7.rs"
 

@@ -3,5 +3,5 @@ pub fn function_name(n: usize) -> i32 {
 }
 
 pub fn main() {
-    println!("{}", function_name(5));
+    println!("{:?}", function_name(5));
 }
