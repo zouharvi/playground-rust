@@ -220,6 +220,10 @@ name = "1985"
 path = "1985_kth_largest.rs"
 
 [[bin]]
+name = "2131"
+path = "2131_longest_palindrome.rs"
+
+[[bin]]
 name = "2136"
 path = "2136_earliest_bloom.rs"
 
